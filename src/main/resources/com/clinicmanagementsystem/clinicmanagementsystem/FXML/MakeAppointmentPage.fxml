@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="690.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.clinicmanagementsystem.clinicmanagementsystem.MakeAppointmentController">
+   <children>
+      <ImageView fitHeight="690.0" fitWidth="600.0" layoutX="1.0" pickOnBounds="true" smooth="false">
+         <image>
+            <Image url="@../../../../../java/com/clinicmanagementsystem/clinicmanagementsystem/blurred-abstract-background-interior-view-looking-out-toward-empty-office-lobby-entrance-doors-glass-curtain-wall-with-frame.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="120.0" layoutY="70.0" text="Make Appointment">
+         <font>
+            <Font name="Arial Bold" size="40.0" />
+         </font>
+      </Label>
+      <Label layoutX="35.0" layoutY="231.0" text="Select Specialty:">
+         <font>
+            <Font name="Arial Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="35.0" layoutY="295.0" text="Select Doctor:">
+         <font>
+            <Font name="Arial Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="40.0" layoutY="364.0" text="Select Schedule:">
+         <font>
+            <Font name="Arial Bold" size="20.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="specialtyComboBox" layoutX="210.0" layoutY="230.0" onAction="#handleSpecialtySelection" prefHeight="26.0" prefWidth="267.0" promptText="Specialty" />
+      <ComboBox fx:id="doctorsComboBox" layoutX="210.0" layoutY="294.0" onAction="#handleDoctorSelection" prefHeight="26.0" prefWidth="267.0" promptText="Doctors" />
+      <ComboBox fx:id="schedulesComboBox" layoutX="210.0" layoutY="363.0" onAction="#handleScheduleSelection" prefHeight="26.0" prefWidth="267.0" promptText="Schedules" />
+      <Button fx:id="submitAppointment" layoutX="231.0" layoutY="466.0" mnemonicParsing="false" onAction="#submitButton" prefHeight="31.0" prefWidth="136.0" text="Submit">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="backbutton" layoutX="231.0" layoutY="526.0" mnemonicParsing="false" onAction="#handleBackButton" prefHeight="31.0" prefWidth="136.0" text="Back">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
